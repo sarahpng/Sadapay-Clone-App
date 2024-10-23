@@ -8,17 +8,14 @@ class MoreView extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xfff0f0f0),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(8.0, 30.0, 8.0, 8.0),
+        padding: const EdgeInsets.fromLTRB(8.0, 40.0, 8.0, 8.0),
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              IconButton(
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                  icon: const Icon(Icons.close),
-                  color: Colors.grey),
+              const SizedBox(
+                height: 10,
+              ),
               Container(
                 decoration: BoxDecoration(
                   color: Colors.white,

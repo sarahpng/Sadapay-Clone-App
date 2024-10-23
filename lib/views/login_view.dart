@@ -18,7 +18,8 @@ class LoginScreen extends StatelessWidget {
               VerificationCodeField(
                   length: 5,
                   onFilled: (value) => Navigator.of(context)
-                      .pushNamedAndRemoveUntil('/main', (route) => false)),
+                      .pushNamedAndRemoveUntil(
+                          '/mainScreen', (route) => false)),
               const SizedBox(
                 height: 20,
               ),

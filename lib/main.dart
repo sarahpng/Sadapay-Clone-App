@@ -1,9 +1,11 @@
+import 'package:sadapay/views/card_info_view.dart';
+import 'package:sadapay/views/load_money_view.dart';
 import 'package:sadapay/views/login_view.dart';
 import 'package:sadapay/views/main_screen.dart';
-import 'package:sadapay/views/more_view.dart';
+import 'package:sadapay/views/send_request_view.dart';
+
 import 'package:flutter/material.dart';
 import 'dart:async';
-
 import 'package:flutter/services.dart';
 
 void main() {
@@ -26,8 +28,10 @@ void main() {
     ),
     routes: {
       '/login': (context) => const LoginScreen(),
-      '/main': (context) => const MainScreen(),
-      '/more': (context) => const MoreView(),
+      '/mainScreen': (context) => const MainScreen(),
+      '/cardInfo': (context) => const CardInfo(),
+      '/loadMoney': (context) => const LoadMoney(),
+      '/sendRequest': (context) => const SendRequest(),
     },
     home: const SplashScreen(),
   ));
